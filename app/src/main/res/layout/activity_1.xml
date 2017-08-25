@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:id="@+id/note"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick_Text"
+            android:scaleType="centerInside"
+            android:src="@drawable/note" />
+
+        <ImageButton
+            android:id="@+id/mic"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick_Recording"
+            android:scaleType="centerInside"
+            android:src="@drawable/mic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/btn_텍스트메모"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Text Memo"
+            android:textColor="#2e8b57"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/btn_음성메모"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Record Memo"
+            android:textColor="#ff1493"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/deleteadv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="광고삭제" />
+
+        <Button
+            android:id="@+id/onadv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="광고보기"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/AdView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:layout_weight="2.5"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/WiseSaying"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

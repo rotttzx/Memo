@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/TitleLayout_Modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:background="@drawable/asd">
+
+        <EditText
+            android:id="@+id/Title_Modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목없음" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/InputLayout_Modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7.5"
+        android:background="@drawable/zzz">
+
+        <EditText
+            android:id="@+id/Content_Modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="내용없음" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView_Modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/callGallery_Modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick_Gallery"
+            android:text="이미지 추가" />
+
+        <Button
+            android:id="@+id/save_Modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장하기" />
+
+        <Button
+            android:id="@+id/cancel_Modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick_Cancel"
+            android:text="취소하기" />
+
+    </LinearLayout>
+</LinearLayout>
